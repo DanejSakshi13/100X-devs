@@ -1,0 +1,13 @@
+Create the landing page of Zerodha - HTML, CSS
+Add on - A calculaator - JS
+
+HTML - structure of website
+Tags 
+Div and Span - Span takes only the required space , div takeup one line
+
+Way to style in browser - CSS
+
+Margin Vs Padding 
+Margin adds space outside the div (with context to the window)
+Padding adds space inside the div
+box-shadow (x-axis, y-axis)
