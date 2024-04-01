@@ -1,0 +1,30 @@
+React 
+
+React components returns a single sibling
+WHY ?
+Reconcilation
+
+
+Rerendering in react
+function rerendering
+minimizing re-renders - push state down
+
+Memoization - skip re-rendering - more important in reactNative 
+skip re-rendering when props are unchanged 
+-----------------------------------------------------------------------
+Keys in react 
+-----------------------------------------------------------------------
+Wrappers in react - components takes another component as input
+-----------------------------------------------------------------------
+Hooks - functions in react that allow you to hook into react state and lifecycle features from function components
+start with Use.....
+
+-----------------------------------------------------------------------
+Side effects 
+Hooks - useState, useEffect, useCallback, useMemo
+
+useState - lets you describe the state of your application - whenever the state updates it triggers the re-render which results in DOM update
+useEffect - allows to perform sideeffects(operations that affect other component and cant be done during rendering) - side effects : [data fetching, subscription] - sideeffect is something we dont want to happen on every render - has a dependency array 
+-----------------------------------------------------------------------
+
+STATES, COMPONENTS, RE-RENDERING

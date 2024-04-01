@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculate</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <script>
+
+        //basic way
+        /*
+        function calculateSum(){
+            const num1 = document.getElementById("n1").value;
+        const num2 = document.getElementById("n2").value;
+        // let element = document.getElementById("finalSum")
+
+        //silently hit server 
+        //fetch - async call
+            fetch("https://sum-server.100xdevs.com/sum?a=" + num1 + "&b=" + num2 )
+            .then(function(response){
+                console.log(response)
+                response.text()
+                .then(function(ans){
+                    console.log(ans)
+                    document.getElementById("finalSum").innerHTML = ans;
+                })
+            })
+            //to print it on frontend we use .then with fetch
+
+
+        // element.innerHTML = parseInt(num1) + parseInt(num2);
+        }
+        */
+
+
+        //cleaner way
+        async function calculateSum2(){
+            const num1 = document.getElementById("n1").value;
+            const num2 = document.getElementById("n2").value;
+            const response = await fetch("https://sum-server.100xdevs.com/sum?a=" + num1 + "&b=" + num2 )
+            const ans = await response.text();
+            document.getElementById("finalSum").innerHTML = ans;
+        }
+       
+    </script>
+
+    <body>
+        <input type="text" placeholder="Number 1" id="n1"> <br>
+        <input type="text" placeholder="Number 2" id="n2"> <br>
+        <button onclick="calculateSum2()">Calculate</button>
+        <div id="finalSum"></div>
+
+        
+    </body>
+</html>

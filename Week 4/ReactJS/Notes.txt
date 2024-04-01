@@ -1,0 +1,17 @@
+Reconcilers 
+
+State in React
+-The state is a built-in React object that is used to contain data or information about the component. 
+-A component's state can change over time; whenever it changes, the component re-renders.
+-The state object is where you store property values that belong to the component.
+
+Global State
+-React global state refers to the data or state that all components in a React application share. 
+-This data is typically stored in a global object, such as a state manager like Redux or the React 
+context API, and it can be accessed by any component in the application that needs it.
+
+
+REACT APP USING VITE
+npm create vite@latest
+npm intall
+npm run dev

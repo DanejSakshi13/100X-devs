@@ -1,0 +1,92 @@
+JavaScript Foundation:
+Beginner:
+Variable Swap:
+Given two variables, a and b, swap their values without using a temporary variable.
+
+Type Checking:
+Write a function that takes a parameter and logs its data type to the console.
+
+Simple Calculator:
+Implement a basic calculator that can perform addition, subtraction, multiplication, and division based on user input.
+
+Medium:
+Object Properties:
+Create an object representing a person with properties like name, age, and address. Write a function to loop through the object and log each property to the console.
+
+Array Manipulation:
+Write a function that takes an array of numbers and returns a new array with only the unique values (remove duplicates).
+
+Object Methods:1
+Add a method to the person object from problem 4 that logs a greeting to the console using the person's name.
+
+Hard:
+Constructor Function:
+Create a constructor function for a Book with properties like title, author, and publication year. Instantiate a few book objects and log their details.
+
+Prototypal Inheritance:
+Extend the Book example from problem 7 by adding a method to the prototype that calculates the age of the book (current year - publication year).
+
+Object Composition:
+Create two objects, one representing a car and another representing an engine. Compose them so that the car object has an engine property.
+
+Callback Functions, Async Functions, and Promises:
+Beginner:
+Callback Example:
+Write a function that takes a callback as an argument and calls it after a short delay (e.g., 1 second).
+
+Basic Promise:
+Write a function that returns a promise. Resolve the promise with a message after a short delay and log the message when the promise is resolved.
+
+Callback Hell:
+Create a nested callback structure that performs a sequence of asynchronous tasks (e.g., reading files or making API calls).
+
+Medium:
+Promise Chain:
+Create a sequence of promises where each resolves after a delay. Chain them together and log a message when all promises are resolved.
+
+Async/Await:
+Write an async function that simulates fetching data from an API. Use await to handle multiple asynchronous calls sequentially.
+
+Error Handling:
+Modify the async function from problem 5 to include error handling using try/catch.
+
+Hard:
+Promise All:
+Write a function that takes an array of promises and returns a new promise that resolves with an array of the resolved values when all promises are fulfilled.
+
+Custom Async Function:
+Implement a function that mimics the behavior of setTimeout using promises. It should resolve after a specified delay.
+
+Race Conditions:
+Create a scenario with two asynchronous operations (promises). Log a message based on which operation completes first.
+
+Loops:
+Beginner:
+Counting Loop:
+Write a loop that counts from 1 to 10 and logs each number to the console.
+
+Even Numbers:
+Write a loop that prints all even numbers from 1 to 20.
+
+Looping Through an Array:
+Given an array of names, use a loop to log each name to the console.
+
+Medium:
+Nested Loops:
+Create a nested loop to generate a multiplication table (1 to 10) and log it to the console.
+
+Array Modification:
+Given an array of numbers, use a loop to create a new array where each element is squared.
+
+FizzBuzz:
+Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
+
+Hard:
+Iterating over Objects:
+Create an object with key-value pairs and use a loop to log each key and its corresponding value to the console.
+
+Loop Control Flow:
+Write a loop that iterates over an array of numbers. If it encounters a number greater than 50, break out of the loop.
+
+Async Looping:
+Implement a loop that makes asynchronous calls inside (e.g., fetch data from an API) and waits for each operation to complete before moving to the next iteration.

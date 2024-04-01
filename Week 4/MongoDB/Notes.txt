@@ -1,0 +1,35 @@
+Database : place where data is stored persistently
+Server : servers autoscales, servers are transient
+
+databases are created using protocols that browsers don't understand
+databases do not have granual access as first class citizens
+
+4 prrimitives of databases
+CRUD 
+-create data
+-read data
+-update data
+-delete data
+
+
+mongoose makes it more strict
+-helps define schemas using auto completion
+-it validates data before going into databases
+
+
+basics good to know
+-cluster
+-models
+-collections
+-schemas
+-update
+-find
+
+
+
+mongodb+srv://danejsakshi3:23KcDykgg7AhuOQn@cluster0.2lpswxd.mongodb.net/
+
+
+
+danejsakshi3
+23KcDykgg7AhuOQn

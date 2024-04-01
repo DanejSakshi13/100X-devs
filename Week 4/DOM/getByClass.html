@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p class="intro">Hello World</p>
+    <p class="intro">Example of getElementByClass</p>
+    <!-- Add an ID to the paragraph element -->
+    <p class="demo" id="demo"></p>
+    <script>
+      const x = document.getElementsByClassName("intro");
+      // Use getElementById with the correct ID
+      document.getElementById("demo").innerHTML = 'First paragraph : ' + x[0].innerHTML;
+    </script>
+  </body>
+</html>

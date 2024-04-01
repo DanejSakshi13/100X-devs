@@ -1,0 +1,14 @@
+express - routing and middleware web framework
+express application - series of middleware functions calls
+
+middleware functions - functions that have access to request and response object
+
+middleware functions (tasks) - 
+-execute any code
+-make changes to req and res cycle
+-end the req-res cycle
+-call the next middleware function in stack
+
+[re-use middlewares]
+eg- ticket counter for an amusement park
+one ticket counter for all rides vs separate ticket counter for separate rides
