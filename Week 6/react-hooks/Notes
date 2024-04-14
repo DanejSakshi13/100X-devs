@@ -1,0 +1,14 @@
+React.memo
+React.memo is a higher-order component provided by React that memoizes a functional component, 
+optimizing its performance by preventing unnecessary re-renders.
+
+When you wrap a functional component with React.memo, React will memoize the result of rendering that 
+component based on its props. If the props have not changed since the last render, React will reuse the
+ memoized result and skip the rendering process for that component, thus avoiding unnecessary re-renders.
+
+
+
+
+STATE DOWN
+Pushing state down, also known as "prop drilling," is a term used in React to describe the process of 
+passing state from a parent component to its nested child components through props.
