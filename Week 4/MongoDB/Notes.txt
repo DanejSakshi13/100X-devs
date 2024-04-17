@@ -26,10 +26,3 @@ basics good to know
 -find
 
 
-
-mongodb+srv://danejsakshi3:23KcDykgg7AhuOQn@cluster0.2lpswxd.mongodb.net/
-
-
- 
-danejsakshi3
-23KcDykgg7AhuOQn
