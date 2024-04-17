@@ -6,8 +6,8 @@
 // import UseEffect from "./Components/UseEffect";
 // import TodoUseEffect from "./Components/TodoUseEffect";
 // import TodoAxios from "./Components/TodoAxios";
-
-import Example from "./Components/Example";
+// import Example from "./Components/Example";
+import CustomHooks from "./Components/CustomHooks";
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
       {/* < UseEffect/> */}
       {/* <TodoUseEffect /> */}
       {/* <TodoAxios /> */}
-      <Example />
+      {/* <Example /> */}
+      {<CustomHooks />}
     </div>
   )
 }

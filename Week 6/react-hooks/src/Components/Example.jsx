@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState, memo , useRef} from "react";
 
 /*
 
@@ -71,8 +71,9 @@ console.log("this is re-render")
 
 
 
+/*
 
-
+USE MEMO EXAMPLE 
 
 export default function Example(){
     const [exchange1Data, setExchange1Data] = useState({});
@@ -101,9 +102,13 @@ export default function Example(){
       });
     })
   }, [])
+console.log("hi here before")
+  const cryptoReturns = useMemo(()=>{
+    return exchange1Data.returns + exchange2Data.returns;
+  },[exchange1Data, exchange2Data])
 
-  const cryptoReturns = exchange1Data.returns + exchange2Data.returns;
-  
+  console.log("hi here after")
+
   const incomeTax = (cryptoReturns + bankData.income) * 0.3
 
   return (
@@ -112,3 +117,93 @@ export default function Example(){
     </div>
   )
 }
+
+*/
+
+/*
+
+USE CALL BACK EXAMPLE 
+
+
+
+export default function Example() {
+  const [exchange1Data, setExchange1Data] = useState({});
+  const [exchange2Data, setExchange2Data] = useState({});
+  const [bankData, setBankData] = useState({});
+
+  useEffect(() => {
+    // Some operation to get the data
+    setExchange1Data({
+      returns: 100
+    });
+  }, []);
+
+  useEffect(() => {
+    // Some operation to get the data
+    setExchange2Data({
+      returns: 100
+    });
+  }, []);
+
+  useEffect(() => {
+    // Some operation to get the data
+    setTimeout(() => {
+      setBankData({
+        income: 100
+      });
+    }, 1000); // Added timeout duration
+  }, []); // Added empty dependency array
+
+  const calculateCryptoReturns = useCallback(() => {
+    return exchange1Data.returns + exchange2Data.returns;
+  }, [exchange1Data, exchange2Data]);
+
+  const cryptoReturns = calculateCryptoReturns(); // Added definition of cryptoReturns
+
+  const incomeTax = (cryptoReturns + bankData.income) * 0.3;
+
+  return (
+    <div>
+      <CryptoGainsCalculator calculateCryptoReturns={calculateCryptoReturns} />
+    </div>
+  );
+}
+
+const CryptoGainsCalculator = memo(function ({ calculateCryptoReturns }) {
+  console.log("crypto child re-render");
+  return (
+    <div>
+      Your crypto returns are {calculateCryptoReturns()}
+    </div>
+  );
+});
+
+CryptoGainsCalculator.displayName = 'CryptoGainsCalculator';
+
+*/
+
+
+/*
+
+USE REF EXAMPLE
+useRef hook is used here to maintain state (clickCount) across renders without causing re-renders 
+when its value changes.
+
+
+export default function Example(){
+  const clickCount = useRef(0);       //reference holds a mutable value, initialized to 0.
+
+  const handleClick = () => {           //executed when the button is clicked
+    clickCount.current += 1;               // increment the current value by 1
+    console.log("Button clicked", clickCount.current, "times");
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click me!</button>
+    </div>
+  );
+}
+
+
+*/
