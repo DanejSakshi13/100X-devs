@@ -1,0 +1,17 @@
+.root-card{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(240, 248, 255);
+}
+
+.blue-top-section{
+    height: 40%;
+    background-color: rgb(140, 220, 255);
+}
+
+.profile-picture{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 20px;
+}
